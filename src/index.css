@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Emmeline';
+  src: url('/src/font/emmeline/Emmeline Webfont/emmeline-regular-webfont.woff2') format('woff2'),
+       url('/src/font/emmeline/Emmeline Webfont/emmeline-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html, body, #root {
-  height: 100%;
+  min-height: 100vh;
 }
 
 body {
-  @apply bg-white text-gray-900;
+  @apply text-gray-100;
 }
