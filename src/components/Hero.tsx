@@ -5,9 +5,11 @@ export default function Hero() {
   return (
     <section aria-label="hero" className="w-full">
     <div className="grid grid-cols-1 mb-4 gap-6">
-        <div className="bg-card-bg rounded-2xl p-4 sm:p-6 md:p-8 flex items-center justify-center min-h-[140px] sm:min-h-[120px] md:min-h-[140px]">
-            <h1 className="text-5xl sm:text-6xl md:text-8xl font-normal tracking-tight text-text-primary flex items-center text-center" style={{ fontFamily: 'Emmeline, sans-serif' }}>
+        <div className=" rounded-2xl p-4 sm:p-6 md:p-8 flex items-center justify-center min-h-[140px] sm:min-h-[120px] md:min-h-[140px] mb-10">
+            <h1 className="flex-col text-5xl sm:text-6xl md:text-8xl font-normal tracking-tight text-text-primary flex items-center text-center" style={{ fontFamily: 'Emmeline, sans-serif' }}>
               <GradientText text="Amanda Abreu - Designer Gráfica" />
+    
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-playwrite text-white" style={{ wordSpacing: '0.25em' }}>Crio identidades visuais que transformam ideias em marcas memoráveis</p>
             </h1>
           </div>
     </div>
@@ -26,10 +28,10 @@ export default function Hero() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-card-bg rounded-2xl flex items-end p-4 sm:p-6 min-h-[120px] sm:min-h-[140px]">
-              <p className="text-text-primary text-base sm:text-lg font-normal">Criatividade e inovação caminham juntas para construir o futuro.</p>
+              <p className="text-text-primary text-base sm:text-lg font-normal font-playwrite" style={{ wordSpacing: '0.25em' }}>Criatividade e inovação caminham juntas para construir o futuro.</p>
             </div>
-            <div className="bg-button-bg rounded-2xl p-4 sm:p-6 min-h-[120px] sm:min-h-[140px] flex items-end">
-              <p className="text-text-primary text-base sm:text-lg font-bold tracking-tight">Entre em contato e descubra mais.</p>
+            <div className="bg-[#a5ffa7] rounded-2xl p-0 overflow-hidden min-h-[240px] sm:min-h-[140px] relative">
+              <img src="/src/assets/amanda.jpeg" alt="Amanda Abreu" className="w-full h-full object-cover border-4 border-dashed border-black absolute inset-0 rotate-[60deg]" />
             </div>
           </div>
         </div>

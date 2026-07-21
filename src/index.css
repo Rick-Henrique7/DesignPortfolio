@@ -17,4 +17,8 @@ html, body, #root {
 
 body {
   @apply text-gray-100;
+  font-family: 'Playwrite NZ Basic', cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

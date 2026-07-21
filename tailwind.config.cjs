@@ -9,6 +9,9 @@ module.exports = {
         'pattern': '#25425f',
         'test': '#00f1ed',
       },
+      fontFamily: {
+        'playwrite': ['Playwrite NZ Basic', 'cursive'],
+      },
     },
   },
   plugins: [],
