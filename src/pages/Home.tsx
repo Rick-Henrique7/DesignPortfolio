@@ -2,8 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Carousel from '../components/Carousel'
 import TypographySection from '../components/TypographySection'
-import LogosSection from '../components/LogosSection'
-import { ThreeDCardDemo } from '../components/ui/3d-card'
+import { BentoGridDemo } from '../components/BentoGridDemo'
 
 export default function Home() {
   return (
@@ -11,38 +10,11 @@ export default function Home() {
       <Hero />
 
       <section id="second" className="mt-12 px-2 sm:px-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 border-2 border-dashed pt-6 sm:pt-10 pb-6 sm:pb-10 rounded-xl place-items-center">
-          <ThreeDCardDemo
-            image="/src/assets/aumigo/aumigo-post-insta.jpeg"
-            title="Brand Identity"
-            description="Estratégia visual completa para sua marca "
-          />
-          <ThreeDCardDemo
-            image="/src/assets/aumigo/aumigo-folheto.jpeg"
-            title="Social Media Design"
-            description="Design criativo para engajar seu público nas redes sociais"
-          />
-          <ThreeDCardDemo
-            image="/src/assets/aumigo/aumigo-logo.jpeg"
-            title="Logo Design"
-            description="Marcas únicas e memoráveis que contam a sua história"
-          />
-          <ThreeDCardDemo
-            image="/src/assets/aumigo/aumigo-logotipo.jpeg"
-            title="Visual Identity"
-            description="Identidade visual coesa para fortalecer seu posicionamento"
-          />
-          <ThreeDCardDemo
-            image="/src/assets/aumigo/aumigo-tela.jpeg"
-            title="Mockup Presentation"
-            description="Apresentações realistas para impressionar seus clientes"
-          />
-          <ThreeDCardDemo
-            image="/src/assets/aumigo/aumigo-camiseta.jpeg"
-            title="Brand Applications"
-            description="Aplicações práticas da sua marca em produtos e materiais"
-          />
-        </div>
+       
+      </section>
+
+      <section id="brand-system" className="mt-12">
+        <BentoGridDemo />
       </section>
 
       <section id="carousel" className="mt-12">
@@ -53,7 +25,17 @@ export default function Home() {
         <TypographySection />
       </section>
 
-      
+      <section id="contact">
+        <div className="w-full h-[80px] bg-[#c1e2f3] mt-10 rounded-xl text-center p-4 text-black">
+          <h1><a href="https://www.instagram.com/blucreative.lab?igsh=M3RnYzZ2eWhxMWcw&utm_source=qr">Instagram: blucreative.lab</a></h1>
+          <h1>
+            Email:{' '}
+            <a href="mailto:mandaabreu1935@gmail.com?subject=Olá Gostaria de solicitar um orçamento">
+              mandaabreu1935@gmail.com
+            </a>
+          </h1>
+        </div>
+      </section>
     </div>
   )
 }
