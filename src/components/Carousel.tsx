@@ -2,6 +2,15 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { motion, PanInfo } from "framer-motion";
+import imagem3 from "@/assets/imagem-3.jpeg";
+import imagem4 from "@/assets/imagem-4.jpeg";
+import imagem5 from "@/assets/imagem-5.jpeg";
+import imagem6 from "@/assets/imagem-6.jpeg";
+import imagem7 from "@/assets/imagem-7.jpeg";
+import imagem8 from "@/assets/imagem-8.jpeg";
+import imagem9 from "@/assets/imagem-9.jpeg";
+import imagem10 from "@/assets/imagem-10.jpeg";
+import imagem11 from "@/assets/imagem-11.jpeg";
 
 interface CardData {
   id: number;
@@ -84,15 +93,15 @@ const Badge: React.FC<BadgeProps> = ({ children, className }) => (
 );
 
 const cardData: CardData[] = [
-  { id: 1, imageUrl: "/src/assets/imagem-3.jpeg" },
-  { id: 2, imageUrl: "/src/assets/imagem-4.jpeg" },
-  { id: 3, imageUrl: "/src/assets/imagem-5.jpeg" },
-  { id: 4, imageUrl: "/src/assets/imagem-6.jpeg" },
-  { id: 5, imageUrl: "/src/assets/imagem-7.jpeg" },
-  { id: 6, imageUrl: "/src/assets/imagem-8.jpeg" },
-  { id: 7, imageUrl: "/src/assets/imagem-9.jpeg" },
-  { id: 8, imageUrl: "/src/assets/imagem-10.jpeg" },
-  { id: 9, imageUrl: "/src/assets/imagem-11.jpeg" },
+  { id: 1, imageUrl: imagem3 },
+  { id: 2, imageUrl: imagem4 },
+  { id: 3, imageUrl: imagem5 },
+  { id: 4, imageUrl: imagem6 },
+  { id: 5, imageUrl: imagem7 },
+  { id: 6, imageUrl: imagem8 },
+  { id: 7, imageUrl: imagem9 },
+  { id: 8, imageUrl: imagem10 },
+  { id: 9, imageUrl: imagem11 },
 ];
 
 export default function Carousel() {

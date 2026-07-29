@@ -1,5 +1,10 @@
 import React from 'react'
 import GradientText from './GradientText'
+import imagem1 from '@/assets/imagem-1.jpeg'
+import logoIceberg from '@/assets/logo-iceberg.jpeg'
+import amanda from '@/assets/amanda.jpeg'
+import flowers from '@/assets/vetores/flowers-svgrepo-com.svg'
+import imagem2 from '@/assets/imagem-2.jpeg'
 
 export default function Hero() {
   return (
@@ -22,29 +27,29 @@ export default function Hero() {
               <h2 className="text-xl sm:text-2xl md:text-3xl italic text-text-primary text-center">Transforme suas ideias em realidade</h2>
             </div>
             <div className="bg-red rounded-2xl overflow-hidden min-h-[180px] sm:min-h-[200px] md:min-h-[220px]">
-              <img src="/src/assets/imagem-1.jpeg" alt="Amanda Abreu" className="w-full h-full object-cover" />
+              <img src={imagem1} alt="Amanda Abreu" className="w-full h-full object-cover" />
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="bg-card-bg rounded-2xl p-0 overflow-hidden min-h-[120px] sm:min-h-[140px] relative">
-              <img src="/src/assets/logo-iceberg.jpeg" alt="Iceberg Logo" className="w-full h-full object-cover absolute inset-0" />
+              <img src={logoIceberg} alt="Iceberg Logo" className="w-full h-full object-cover absolute inset-0" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <p className="absolute bottom-0 left-0 p-4 text-white text-base sm:text-lg font-normal font-playwrite z-10" style={{ wordSpacing: '0.25em' }}>Criatividade e inovação caminham juntas para construir o futuro.</p>
             </div>
             <div className="bg-[#27b3a0] rounded-2xl p-0 overflow-hidden min-h-[240px] sm:min-h-[140px] relative">
-              <img src="/src/assets/amanda.jpeg" alt="Amanda Abreu" className="w-full h-full object-cover border-4 rounded-[100%] border-dashed border-black absolute inset-0 rotate-[60deg]" />
+              <img src={amanda} alt="Amanda Abreu" className="w-full h-full object-cover border-4 rounded-[100%] border-dashed border-black absolute inset-0 rotate-[60deg]" />
               {/* Vector - Top Right */}
-              <img src="/src/assets/vetores/flowers-svgrepo-com.svg" alt="" className="absolute top-0 right-0 w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 m-4 object-contain pointer-events-none" />
+              <img src={flowers} alt="" className="absolute top-0 right-0 w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 m-4 object-contain pointer-events-none" />
               {/* Vector - Bottom Left */}
-              <img src="/src/assets/vetores/flowers-svgrepo-com.svg" alt="" className="absolute bottom-0 left-0 w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 m-4 object-contain pointer-events-none" />
+              <img src={flowers} alt="" className="absolute bottom-0 left-0 w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 m-4 object-contain pointer-events-none" />
             </div>
           </div>
         </div>
 
         <div className="flex flex-col gap-6">
           <div className="bg-card-bg rounded-2xl p-0 overflow-hidden h-full">
-            <img src="/src/assets/imagem-2.jpeg" alt="Destaque" className="w-full h-full object-cover" />
+            <img src={imagem2} alt="Destaque" className="w-full h-full object-cover" />
           </div>
 
           <div className="bg-card-bg rounded-2xl p-4">
