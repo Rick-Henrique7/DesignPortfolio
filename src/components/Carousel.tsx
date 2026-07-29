@@ -6,7 +6,6 @@ import { motion, PanInfo } from "framer-motion";
 interface CardData {
   id: number;
   imageUrl: string;
-  title: string;
 }
 
 interface IconProps {
@@ -85,15 +84,15 @@ const Badge: React.FC<BadgeProps> = ({ children, className }) => (
 );
 
 const cardData: CardData[] = [
-  { id: 1, imageUrl: "/src/assets/imagem-3.jpeg", title: "Projeto 1" },
-  { id: 2, imageUrl: "/src/assets/imagem-4.jpeg", title: "Projeto 2" },
-  { id: 3, imageUrl: "/src/assets/imagem-5.jpeg", title: "Projeto 3" },
-  { id: 4, imageUrl: "/src/assets/imagem-6.jpeg", title: "Projeto 4" },
-  { id: 5, imageUrl: "/src/assets/imagem-7.jpeg", title: "Projeto 5" },
-  { id: 6, imageUrl: "/src/assets/imagem-8.jpeg", title: "Projeto 6" },
-  { id: 7, imageUrl: "/src/assets/imagem-9.jpeg", title: "Projeto 7" },
-  { id: 8, imageUrl: "/src/assets/imagem-10.jpeg", title: "Projeto 8" },
-  { id: 9, imageUrl: "/src/assets/imagem-11.jpeg", title: "Projeto 9" },
+  { id: 1, imageUrl: "/src/assets/imagem-3.jpeg" },
+  { id: 2, imageUrl: "/src/assets/imagem-4.jpeg" },
+  { id: 3, imageUrl: "/src/assets/imagem-5.jpeg" },
+  { id: 4, imageUrl: "/src/assets/imagem-6.jpeg" },
+  { id: 5, imageUrl: "/src/assets/imagem-7.jpeg" },
+  { id: 6, imageUrl: "/src/assets/imagem-8.jpeg" },
+  { id: 7, imageUrl: "/src/assets/imagem-9.jpeg" },
+  { id: 8, imageUrl: "/src/assets/imagem-10.jpeg" },
+  { id: 9, imageUrl: "/src/assets/imagem-11.jpeg" },
 ];
 
 export default function Carousel() {
@@ -153,12 +152,12 @@ export default function Carousel() {
         <div className="relative flex w-full flex-col rounded-3xl border border-yellow-200 bg-button-bg p-4 pt-6 md:p-6">
           <Badge className="absolute left-4 top-6 rounded-xl border border-yellow-300 text-base text-yellow-800 bg-yellow-100/80 backdrop-blur-sm md:left-6">
             <SparklesIcon className="fill-[#EEBDE0] stroke-1 text-neutral-800 h-5 w-5 mr-1" />
-            Enhanced Carousel
+            Tipografias e Logotipos
           </Badge>
 
-          <div className="relative w-full h-[280px] md:h-[400px] flex items-center justify-center overflow-hidden pt-12">
+          <div className="relative w-full h-[280px] md:h-[400px] mt-10 flex items-center justify-center overflow-hidden pt-12">
             <motion.div
-              className="w-full h-full flex items-center justify-center"
+              className="w-full h-full flex items-center mb-10 justify-center"
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.2}
@@ -242,7 +241,7 @@ function Card({ card, index, activeIndex, totalCards }: CardProps) {
       <div className="relative w-full h-full rounded-3xl shadow-2xl overflow-hidden bg-gray-200 dark:bg-neutral-800">
         <img
           src={card.imageUrl}
-          alt={card.title}
+          alt={`Slide ${card.id}`}
           className="w-full h-full object-cover pointer-events-none"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
@@ -251,9 +250,6 @@ function Card({ card, index, activeIndex, totalCards }: CardProps) {
               "https://placehold.co/400x600/1e1e1e/ffffff?text=Image+Missing";
           }}
         />
-        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-          <h4 className="text-white text-lg font-semibold">{card.title}</h4>
-        </div>
       </div>
     </motion.div>
   );

@@ -6,8 +6,8 @@ export default function Hero() {
     <section aria-label="hero" className="w-full">
     <div className="grid grid-cols-1 mb-4 gap-6">
         <div className=" rounded-2xl p-4 sm:p-6 md:p-8 flex items-center justify-center min-h-[140px] sm:min-h-[120px] md:min-h-[140px] mb-10">
-            <h1 className="flex-col text-5xl sm:text-6xl md:text-8xl font-normal tracking-tight text-text-primary flex items-center text-center" style={{ fontFamily: 'Emmeline, sans-serif' }}>
-              <h1 className="text-[40]">Amanda Abreu - Designer Gráfica </h1>
+            <h1 className="flex-col text-5xl sm:text-xl md:text-8xl font-normal tracking-tight text-text-primary flex items-center text-center" style={{ fontFamily: 'Emmeline, sans-serif' }}>
+              <h1 className="text-7xl sm:text-7xl md:text-9xl ">Amanda Abreu <br></br> Designer Gráfica </h1>
     
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-playwrite text-text-primary" style={{ wordSpacing: '0.25em' }}>Crio identidades visuais que transformam ideias em marcas memoráveis</p>
             </h1>
@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="bg-card-bg rounded-2xl p-4 sm:p-6 md:p-8 flex items-center justify-center min-h-[180px] sm:min-h-[200px] md:min-h-[220px]">
               <h2 className="text-xl sm:text-2xl md:text-3xl italic text-text-primary text-center">Transforme suas ideias em realidade</h2>
             </div>
-            <div className="bg-card-bg rounded-2xl overflow-hidden min-h-[180px] sm:min-h-[200px] md:min-h-[220px]">
+            <div className="bg-red rounded-2xl overflow-hidden min-h-[180px] sm:min-h-[200px] md:min-h-[220px]">
               <img src="/src/assets/imagem-1.jpeg" alt="Amanda Abreu" className="w-full h-full object-cover" />
             </div>
           </div>
@@ -32,8 +32,12 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <p className="absolute bottom-0 left-0 p-4 text-white text-base sm:text-lg font-normal font-playwrite z-10" style={{ wordSpacing: '0.25em' }}>Criatividade e inovação caminham juntas para construir o futuro.</p>
             </div>
-            <div className="bg-[#a5ffa7] rounded-2xl p-0 overflow-hidden min-h-[240px] sm:min-h-[140px] relative">
-              <img src="/src/assets/amanda.jpeg" alt="Amanda Abreu" className="w-full h-full object-cover border-4 border-dashed border-black absolute inset-0 rotate-[60deg]" />
+            <div className="bg-[#27b3a0] rounded-2xl p-0 overflow-hidden min-h-[240px] sm:min-h-[140px] relative">
+              <img src="/src/assets/amanda.jpeg" alt="Amanda Abreu" className="w-full h-full object-cover border-4 rounded-[100%] border-dashed border-black absolute inset-0 rotate-[60deg]" />
+              {/* Vector - Top Right */}
+              <img src="/src/assets/vetores/flowers-svgrepo-com.svg" alt="" className="absolute top-0 right-0 w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 m-4 object-contain pointer-events-none" />
+              {/* Vector - Bottom Left */}
+              <img src="/src/assets/vetores/flowers-svgrepo-com.svg" alt="" className="absolute bottom-0 left-0 w-10 h-10 sm:w-8 sm:h-8 md:w-10 md:h-10 m-4 object-contain pointer-events-none" />
             </div>
           </div>
         </div>
@@ -64,13 +68,13 @@ function Musea() {
 
       <ul className="space-y-3">
         <li>
-          <a href="#elara" className="block p-3 rounded-md text-text-primary font-medium uppercase tracking-wider hover:bg-pattern/30">PROJECTS</a>
+          <a href="#carousel" className="block p-3 rounded-md text-text-primary font-medium uppercase tracking-wider hover:bg-pattern/30">CARROSSEL</a>
         </li>
         <li>
-          <a href="#verve" className="block p-3 rounded-md text-text-primary font-medium uppercase tracking-wider hover:bg-pattern/30">INSTAGRAM</a>
+          <a href="#brand-system" className="block p-3 rounded-md text-text-primary font-medium uppercase tracking-wider hover:bg-pattern/30">CRIAÇÃO DE MARCA</a>
         </li>
         <li>
-          <a href="#contact" className="block p-3 rounded-md text-text-primary font-medium uppercase tracking-wider hover:bg-pattern/30">CONTACT</a>
+          <a href="#contact" className="block p-3 rounded-md text-text-primary font-medium uppercase tracking-wider hover:bg-pattern/30">CONTATO</a>
         </li>
       </ul>
     </nav>
