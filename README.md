@@ -2,6 +2,9 @@
 
 Este projeto é uma landing page elegante, estratégica e visualmente impactante criada para apresentar a identidade de Amanda, uma designer gráfica com foco em branding, tipografia e criação de experiências visuais marcantes. A proposta foi unir estética, comunicação e usabilidade em uma experiência digital que transmite personalidade, profissionalismo e sensibilidade artística.
 
+<img width="2447" height="1795" alt="Captura de tela_4-8-2026_20547_amanda-designer vercel app" src="https://github.com/user-attachments/assets/6a908b4c-778d-4bbd-a970-b26428bec947" />
+
+
 ## O que esse projeto representa
 
 Mais do que um simples site, esse projeto foi pensado como uma vitrine de personalidade e competência. Ele reflete uma abordagem de design que valoriza:
